@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasmine</title>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <h1>About Me</h1>
+    <!-- nav -->
+    <nav class="nav center" id="links">
+      <a
+        class="nav-link active"
+        aria-current="page"
+        href="https://github.com/flor-et"
+        target="_blank"
+        ><img
+          class="linkImg"
+          src="https://cdn-icons-png.flaticon.com/512/2111/2111425.png"
+          alt="github icon"
+      /></a>
+      <a
+        class="nav-link active"
+        aria-current="page"
+        href="https://www.linkedin.com/in/jashernandez/"
+        target="_blank"
+        ><img
+          class="linkImg"
+          src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+          alt="linked in icon"
+      /></a>
+      <a
+        class="nav-link active"
+        aria-current="page"
+        href="mailto:jashernandez5705@gmail.com"
+        target="blank"
+        ><img
+          class="linkImg"
+          src="https://cdn-icons-png.flaticon.com/512/3178/3178165.png"
+          alt="mail icon"
+      /></a>
+    </nav>
+
+    <!-- intro card -->
+    <div class="card mb-3">
+      <div class="row g-0">
+        <div class="col-md-3">
+          <img
+            src="./jasmine.png"
+            class="img-fluid rounded-start hCardImg"
+            alt="a picture of jasmine, the creator of this website, next to her dog"
+          />
+        </div>
+        <div class="col-md-3">
+          <div class="card-body">
+            <h5 class="card-title">Hi, I'm Jasmine!</h5>
+            <p class="card-text">
+              I'm a recent Computer Science graduate from San Francisco State
+              University, and currently a trainee at Dev/Mission.I have
+              experience in Front-End Web Development, using HTML, CSS, and
+              other tools to create websites. I’ve recently been making an
+              effort to expand my skill set to include hardware, learning how to
+              repair and refurbish computers.I’m passionate about using
+              technology in creative but also meaningful ways. It was what first
+              drew me to tech: the liberty to be both creative, but also
+              analytical.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- link to projects pages -->
+    <div class="row row-cols-1 row-cols-lg-4 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="data:image/png;base64,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" class="card-img-top" alt="Project Image" />
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="data:image/png;base64,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" class="card-img-top" alt="Project Image" />
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text">This is a short card.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="data:image/png;base64,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" class="card-img-top" alt="Project Image" />
+          <div class="card-body">
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- projects carousel -->
+     <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="data:image/png;base64,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" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="data:image/png;base64,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" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="data:image/png;base64,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" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
