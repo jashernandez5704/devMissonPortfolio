@@ -1,21 +1,83 @@
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
+  font-family: "Ultra", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-family: "Goldman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h5 {
+  font-family: "Bubblegum Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+p {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .linkImg {
-    width: 3rem;
+  width: 3rem;
 }
 
-.center{
-    margin-left: auto;
-    margin-right: auto;
+.linkImg:hover {
+  opacity: 0.3;
 }
 
-.links{
-    display: inline-block;
+.center {
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.hCardImg{
-    height:100%;
-    object-fit: cover;
+.links {
+  display: inline-block;
+}
+
+.hCardImg {
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* colors */
+body {
+  background-color: #e1e5ee;
+}
+
+.card {
+  /* default to no background color*/
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.projectCard {
+  border: none;
+  background-color: #f7d49f;
+}
+
+h1,
+nav {
+  background-color: #2a324b;
+  color: #e1e5ee;
+}
+
+.textShadow {
+  color: white;
+  font-weight: bold;
+  text-shadow: 3px 3px 3px black;
+}
+
+.card-img {
+  filter: blur(1px);
 }
