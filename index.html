@@ -66,37 +66,37 @@
       /></a>
     </nav>
 
-    <!-- intro card -->
-    <div
-      class="container center"
-      style="border: none; margin-top: 3rem; margin-bottom: 3rem"
-    >
-      <div class="row">
-        <div class="card mb-3" style="border: none">
-          <div class="row g-0 center">
-            <div class="col-md-6 col-xl-3">
-              <img
-                src="./jasmine.png"
-                class="img-fluid rounded-start hCardImg"
-                alt="a picture of jasmine, the creator of this website, next to her dog"
-              />
-            </div>
-            <div class="col-md-6 col-xl-3">
-              <div class="card-body">
-                <h5 class="card-title"><b>Hi, I'm Jasmine!</b></h5>
-                <p class="card-text">
-                  I'm a recent Computer Science graduate from San Francisco
-                  State University, currently a trainee at Dev/Mission and a
-                  bookkeeper for La Victoria and SourFlour. I have experience in
-                  Front-End Web Development, using HTML, CSS, and other tools to
-                  create interactive and responsive websites. <br />
-                  <br />Recently, I've been making an effort to expand my skill
-                  set to include hardware, learning how to repair and refurbish
-                  computers and how to build circuits using Arduinos. I'm
-                  passionate about using technology in creative but also
-                  meaningful ways. It was what first drew me to tech: the
-                  liberty to be both creative, but also analytical.
-                </p>
+    <!-- background image div -->
+    <div class="container-fluid" id="introBackground">
+      <!-- intro card -->
+      <div class="container center" style="border: none">
+        <div class="row">
+          <div class="card mb-3" style="border: none">
+            <div class="row g-0 center">
+              <div class="col-md-6 col-lg-6 col-xl-4">
+                <img
+                  src="./jasmine.png"
+                  class="img-fluid rounded-start hCardImg"
+                  alt="a picture of jasmine, the creator of this website, next to her dog"
+                />
+              </div>
+              <div class="col-md-12 col-lg-4" id="introCardTextContainer">
+                <div class="card-body" id="introCardText">
+                  <h5 class="card-title"><b>Hi, I'm Jasmine!</b></h5>
+                  <p class="card-text">
+                    I'm a recent Computer Science graduate from San Francisco
+                    State University and currently a trainee at Dev/Mission's
+                    Pre-Apprenticeship program. I have experience in Front-End
+                    Web Development, using HTML, CSS, and other tools to create
+                    interactive and responsive websites. <br />
+                    <br />Recently, I've been making an effort to expand my
+                    skill set to include hardware, learning how to repair and
+                    refurbish computers and how to build circuits using
+                    Arduinos. I'm passionate about using technology in creative
+                    but also meaningful ways. It was what first drew me to tech:
+                    the liberty to be both creative, but also analytical.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -106,9 +106,7 @@
 
     <!-- link to projects pages -->
     <div class="container" style="margin-bottom: 3rem">
-      <div
-        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 g-4 center"
-      >
+      <div class="row row-cols-2 row-cols-md-3 g-4 center">
         <a href="software.html">
           <div class="col">
             <div class="card theme-inverse">
@@ -144,50 +142,104 @@
       </div>
     </div>
 
-    <!-- projects/work experience/skills -->
-    <div class="container" style="margin-bottom: 9rem;">
+    <!-- work experience/skills/other background -->
+    <div class="container">
       <div class="row">
-        <div class="accordion">
-          <details class="accordion-item" name="accordionExample" open>
-            <summary class="accordion-header">
-              Accordion Item #1
-                <path d="m2 5 6 6 6-6" />
-              </svg>
-            </summary>
-            <div class="accordion-body">
-              <strong>This is the first item’s accordion body.</strong> It is
-              shown by default because the <code>open</code> attribute is
-              present. The native <code>&lt;details&gt;</code> element handles
-              all the show/hide logic without any JavaScript. You can put any
-              HTML content within the <code>.accordion-body</code>.
-            </div>
+        <div class="accordion accordion-gap">
+          <!-- item -->
+          <details class="accordion-item center">
+            <summary class="accordion-header">Technical Skills</summary>
+            <ul>
+              <li>
+                Programming & Web
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Python</li>
+                  <li>JavaScript</li>
+                  <li>C++</li>
+                </ul>
+              </li>
+              <li>
+                Frameworks & Libraries
+                <ul>
+                  <li>Flask</li>
+                  <li>jQuery</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </li>
+              <li>
+                Developer Tools
+                <ul>
+                  <li>Git & GitHub</li>
+                  <li>Command-line Navigation</li>
+                  <li>Virtual Machines</li>
+                </ul>
+              </li>
+              <li>
+                Systems & IT
+                <ul>
+                  <li>Operating System Installation</li>
+                  <li>Windows & Linux</li>
+                  <li>Computer Hardware Repair</li>
+                </ul>
+              </li>
+            </ul>
           </details>
-          <details class="accordion-item" name="accordionExample">
-            <summary class="accordion-header">
-              Accordion Item #2
-                <path d="m2 5 6 6 6-6" />
-              </svg>
-            </summary>
-            <div class="accordion-body">
-              <strong>This is the second item’s accordion body.</strong> The
-              <code>name</code> attribute groups this with other accordion
-              items. When you open this item, any other open item in the same
-              group will close automatically.
-            </div>
+
+          <!-- item -->
+          <details class="accordion-item center">
+            <summary class="accordion-header">Design & UX</summary>
+            <ul>
+              <li>
+                Design Tools
+                <ul>
+                  <li>Figma</li>
+                  <li>Canva</li>
+                  <li>Krita</li>
+                </ul>
+              </li>
+              <li>
+                UX and UI
+                <ul>
+                  <li>Wireframing</li>
+                  <li>Prototyping</li>
+                  <li>Responsive Design</li>
+                </ul>
+              </li>
+            </ul>
           </details>
-          <details class="accordion-item" name="accordionExample">
+
+          <!-- item -->
+          <details class="accordion-item center">
             <summary class="accordion-header">
-              Accordion Item #3
-                <path d="m2 5 6 6 6-6" />
-              </svg>
+              Productivity
             </summary>
-            <div class="accordion-body">
-              <strong>This is the third item’s accordion body.</strong> This
-              exclusive accordion behavior is built into the browser—no
-              Bootstrap JavaScript required. Just use matching
-              <code>name</code> attributes on your
-              <code>&lt;details&gt;</code> elements.
-            </div>
+            <ul>
+              <li>
+                Office
+                <ul>
+                  <li>Microsoft 365</li>
+                  <li>Google Workspace</li>
+                  <li>QuickBooks</li>
+                </ul>
+              </li>
+              <li>
+                Languages
+                <ul>
+                  <li>Fluent in English and Spanish</li>
+                </ul>
+              </li>
+              <li>
+                Certifications
+                <ul>
+                  <li>Microsoft Office Specialist: Excel Associate</li>
+                  <li>
+                    CITI Program: Responsible Conduct of Research
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </details>
         </div>
       </div>
