@@ -106,7 +106,7 @@
 
     <!-- link to projects pages -->
     <div class="container" style="margin-bottom: 3rem">
-      <div class="row row-cols-2 row-cols-md-3 g-4 center">
+      <div class="row row-cols-12 row-cols-md-2 row-cols-lg-3 g-4 center">
         <a href="software.html">
           <div class="col">
             <div class="card theme-inverse">
@@ -145,10 +145,12 @@
     <!-- work experience/skills/other background -->
     <div class="container">
       <div class="row">
-        <div class="accordion accordion-gap">
+        <div class="accordion">
           <!-- item -->
-          <details class="accordion-item center">
-            <summary class="accordion-header">Technical Skills</summary>
+          <details class="accordion-item center" name="Technical Skills" open>
+            <summary class="accordion-header" id="accordionTop">
+              Technical Skills
+            </summary>
             <ul>
               <li>
                 Programming & Web
@@ -188,7 +190,7 @@
           </details>
 
           <!-- item -->
-          <details class="accordion-item center">
+          <details class="accordion-item center" name="Design & UX">
             <summary class="accordion-header">Design & UX</summary>
             <ul>
               <li>
@@ -211,10 +213,8 @@
           </details>
 
           <!-- item -->
-          <details class="accordion-item center">
-            <summary class="accordion-header">
-              Productivity
-            </summary>
+          <details class="accordion-item center" name="Productivity">
+            <summary class="accordion-header">Productivity</summary>
             <ul>
               <li>
                 Office
@@ -234,9 +234,7 @@
                 Certifications
                 <ul>
                   <li>Microsoft Office Specialist: Excel Associate</li>
-                  <li>
-                    CITI Program: Responsible Conduct of Research
-                  </li>
+                  <li>CITI Program: Responsible Conduct of Research</li>
                 </ul>
               </li>
             </ul>

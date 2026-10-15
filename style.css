@@ -1,6 +1,7 @@
-body{
-background-image: url("https://www.nicepng.com/png/full/796-7965805_stars-star-glitter-gold-golden-yellow-space-planets.png");
+body {
+  background-image: url("https://www.nicepng.com/png/full/796-7965805_stars-star-glitter-gold-golden-yellow-space-planets.png");
   background-size: 15rem;
+  background-color: #e1e5ee;
 }
 
 h1 {
@@ -8,9 +9,22 @@ h1 {
   font-family: "Ultra", serif;
   font-weight: 400;
   font-style: normal;
+  margin-top: 0;
+  border: none;
 }
 
-h4, summary {
+nav {
+  margin-top: 0;
+  border: none;
+}
+
+h1,
+nav {
+  border: none;
+}
+
+h4,
+summary {
   font-family: "Goldman", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -30,7 +44,8 @@ h5 {
   font-size: 30px;
 }
 
-p, li {
+p,
+li {
   font-family: "JetBrains Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
@@ -66,17 +81,14 @@ a {
 
 #introBackground {
   /* TODO */
-  /* background-image: url("https://www.nicepng.com/png/full/796-7965805_stars-star-glitter-gold-golden-yellow-space-planets.png");
-  background-size: 15rem; */
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnfBx66LRLKbNDACVU0-qOJafcsnquBepcMVFfzxYCmQ&s=10");
+  background-size: 30rem; */
   padding-top: 5rem;
   padding-bottom: 5rem;
-   margin-bottom: 3rem
+  margin-bottom: 3rem;
 }
 
 /* colors */
-body {
-  background-color: #e1e5ee;
-}
 
 .card {
   /* default to no background color*/
@@ -100,7 +112,7 @@ nav {
   text-shadow: 3px 3px 3px black;
 }
 
-#introCardTextContainer{
+#introCardTextContainer {
   display: flex;
   align-items: center;
   margin: 10px;
@@ -109,24 +121,31 @@ nav {
   border-radius: 10px;
 }
 
-
 .card-img {
   filter: blur(1px);
 }
 
-
-.accordion{
+.accordion {
   margin-top: 5rem;
   margin-bottom: 10rem;
 }
 
 .accordion-item {
   padding-bottom: 1rem;
-  width: 80%;
   background-color: #a2a6b9;
-  border: #2a324b solid 3px;
+  /* border: #2a324b solid 3px; */
 }
 
-ul{
+#accordionTop {
+  border-radius: 5px 5px 0 0;
+}
+
+@media (min-width: 768px) {
+  .accordion-item {
+    width: 75%;
+  }
+}
+
+ul {
   margin-top: 5px;
 }
