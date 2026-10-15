@@ -1,7 +1,9 @@
 body {
-  background-image: url("https://www.nicepng.com/png/full/796-7965805_stars-star-glitter-gold-golden-yellow-space-planets.png");
+  /* background-image: url("https://www.nicepng.com/png/full/796-7965805_stars-star-glitter-gold-golden-yellow-space-planets.png"); */
   background-size: 15rem;
-  background-color: #e1e5ee;
+  background-color: #8A95A5;
+  background-image: url("https://www.nicepng.com/png/full/796-7965805_stars-star-glitter-gold-golden-yellow-space-planets.png");
+  background-size: 20rem;
 }
 
 h1 {
@@ -13,13 +15,13 @@ h1 {
   border: none;
 }
 
-nav {
+.mynav {
   margin-top: 0;
   border: none;
 }
 
 h1,
-nav {
+.mynav {
   border: none;
 }
 
@@ -28,13 +30,6 @@ summary {
   font-family: "Goldman", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
-summary {
-  font-size: 1.5rem;
-  background-color: #2a324b;
-  color: #e1e5ee;
-  padding: 0.5rem;
 }
 
 h5 {
@@ -82,13 +77,18 @@ a {
 #introBackground {
   /* TODO */
   /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnfBx66LRLKbNDACVU0-qOJafcsnquBepcMVFfzxYCmQ&s=10");
-  background-size: 30rem; */
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  margin-bottom: 3rem;
+  background-size: 20rem; */
+  background-image: url("https://www.nicepng.com/png/full/796-7965805_stars-star-glitter-gold-golden-yellow-space-planets.png");
+  background-size: 20rem;
+  background-color: #090C08;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 /* colors */
+.invertColor{
+  /* filter: invert(0.6); */
+}
 
 .card {
   /* default to no background color*/
@@ -97,13 +97,13 @@ a {
 
 .projectCard {
   border: none;
-  background-color: #f7d49f;
+  /* background-color: #f7d49f; */
 }
 
 h1,
-nav {
-  background-color: #2a324b;
-  color: #e1e5ee;
+.mynav {
+  background-color: white;
+  color: #090C08;
 }
 
 .textShadow {
@@ -116,9 +116,19 @@ nav {
   display: flex;
   align-items: center;
   margin: 10px;
-  background-color: #767b91;
+  background-color: #8A95A5;
   padding: 5px;
   border-radius: 10px;
+}
+
+#projectsBackground{
+  /* background-color: #8A95A5; */
+  margin: 0;
+  padding: 5rem;
+}
+
+#skillsBackground{
+  /* background-color: #8A95A5; */
 }
 
 .card-img {
@@ -126,14 +136,28 @@ nav {
 }
 
 .accordion {
-  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 5rem; */
   margin-bottom: 10rem;
+  
+}
+
+summary {
+  font-size: 1.5rem;
+  background-color: #090C08;
+  color: white;
+  padding: 0.5rem;
 }
 
 .accordion-item {
-  padding-bottom: 1rem;
-  background-color: #a2a6b9;
-  /* border: #2a324b solid 3px; */
+  /* background-color: #8A95A5; */
+  background-color: #2a324b;
+  color: white;
+  border: none;
+  margin: 1rem;
 }
 
 #accordionTop {
@@ -146,6 +170,44 @@ nav {
   }
 }
 
-ul {
-  margin-top: 5px;
+.skillList{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+}
+
+#menuBar{
+  height: 0;
+  margin: 0;
+}
+
+#menuButton{
+  position: absolute;
+  right: 1.5rem;
+  top: 2.5rem;
+}
+
+footer{
+  background-color: #2a324b;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer p{
+  color: white;
+}
+
+footer a{
+   color: #8A95A5;
+}
+
+footer a:hover {
+  color: #CAD5E5;
+}
+
+a{
+  color: inherit;
 }
